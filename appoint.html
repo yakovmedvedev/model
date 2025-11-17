@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>model</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/mod.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<h1>Model</h1>
+	<h2>Contact forms</h2>
+	<h3>Contact forms</h3>
+	<div class="modal-container">
+		<div class="modal">
+
+			<h2 align="center">Запись на прием</h2>
+		<div style="display: flex; flex-direction: column; padding: 10px; margin: auto">
+			<div>
+		<form id="search-form" action="/search/result" method="GET"><div class="search_input_wrapper"><div class="search_input"><input autocomplete="on" class="form_input" name="SearchForm[txt]" id="SearchForm_txt" type="text" placeholder="Искать по специалисту или направлению"></div><div class="contact_button" style="order: 2; margin: 0 auto 0px auto;"><input class="contact_form_button" type="submit" name="yt0" value=" Поиск "></div></div><input style="order:3" name="SearchForm[sort]" id="SearchForm_sort" type="hidden" value="1"></form>
+				</div>
+		
+		<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: space-around; width: 60%; padding: 10px; margin: auto">
+			<div style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding: 10px; margin: 20px auto 0 auto">
+			<div style="margin-right: 10px">Направление</div>
+			<div>            <select class="req" name="AppointmentForm[direction]" onchange="GetDoctors($(this).val(),0)" onblur="GetDoctors($(this).val(),0)" id="appointment_directions">
+              <option value="">Выберите направление</option>
+                                  <option value="2">Аллергология, иммунология</option>
+                                  <option value="191">Анестезиология</option>
+                                  <option value="3">Гастроэнтерология</option>
+                                  <option value="10">Гинекология</option>
+                                  <option value="27">Дерматология</option>
+                                  <option value="141">Дерматоонкология</option>
+                                  <option value="26">Диетология</option>
+                                  <option value="8">Кардиология</option>
+                                  <option value="11">Косметология</option>
+                                  <option value="139">Лабораторная диагностика</option>
+                                  <option value="13">Массаж</option>
+                                  <option value="14">МРТ</option>
+                                  <option value="15">Неврология </option>
+                                  <option value="521">Нейрофизиология</option>
+                                  <option value="338">Нефрология</option>
+                                  <option value="213">Озонотерапия</option>
+                                  <option value="25">Ортопедия и травматология</option>
+                                  <option value="7">Оториноларингология </option>
+                                  <option value="9">Офтальмология</option>
+                                  <option value="263">Плазмаферез  </option>
+                                  <option value="352">Пластическая хирургия </option>
+                                  <option value="149">Проктология</option>
+                                  <option value="474">Пульмонология</option>
+                                  <option value="81">Ревматология</option>
+                                  <option value="18">Рентген</option>
+                                  <option value="19">Сосудистая хирургия - флебология</option>
+                                  <option value="20">Терапия</option>
+                                  <option value="196">УЗИ</option>
+                                  <option value="21">Урология</option>
+                                  <option value="22">Функциональная диагностика</option>
+                                  <option value="183">Хирургия</option>
+                                  <option value="252">Центр коррекции фигуры</option>
+                                  <option value="23">Эндокринология</option>
+                                  <option value="24">Эндоскопия</option>
+                            </select></div>
+				</div>
+			<div style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding: 10px; margin: 20px auto">
+			<div style="margin-right: 10px">Специалист</div>
+			<div>            <select class="req" name="AppointmentForm[direction]" onchange="GetDoctors($(this).val(),0)" onblur="GetDoctors($(this).val(),0)" id="appointment_directions">
+              <option value="">Выберите специалиста</option>
+                                  <option value="2">Аллергология, иммунология</option>
+                                  <option value="191">Анестезиология</option>
+                                  <option value="3">Гастроэнтерология</option>
+                                  <option value="10">Гинекология</option>
+                                  <option value="27">Дерматология</option>
+                                  <option value="141">Дерматоонкология</option>
+                                  <option value="26">Диетология</option>
+                                  <option value="8">Кардиология</option>
+                                  <option value="11">Косметология</option>
+                                  <option value="139">Лабораторная диагностика</option>
+                                  <option value="13">Массаж</option>
+                                  <option value="14">МРТ</option>
+                                  <option value="15">Неврология </option>
+                                  <option value="521">Нейрофизиология</option>
+                                  <option value="338">Нефрология</option>
+                                  <option value="213">Озонотерапия</option>
+                                  <option value="25">Ортопедия и травматология</option>
+                                  <option value="7">Оториноларингология </option>
+                                  <option value="9">Офтальмология</option>
+                                  <option value="263">Плазмаферез  </option>
+                                  <option value="352">Пластическая хирургия </option>
+                                  <option value="149">Проктология</option>
+                                  <option value="474">Пульмонология</option>
+                                  <option value="81">Ревматология</option>
+                                  <option value="18">Рентген</option>
+                                  <option value="19">Сосудистая хирургия - флебология</option>
+                                  <option value="20">Терапия</option>
+                                  <option value="196">УЗИ</option>
+                                  <option value="21">Урология</option>
+                                  <option value="22">Функциональная диагностика</option>
+                                  <option value="183">Хирургия</option>
+                                  <option value="252">Центр коррекции фигуры</option>
+                                  <option value="23">Эндокринология</option>
+                                  <option value="24">Эндоскопия</option>
+                            </select></div>
+				</div>
+			</div>
+</div>
+			</div>
+		</div>
+	
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

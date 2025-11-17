@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>model</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/mod.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<h1>Model</h1>
+	<h2>Contact forms</h2>
+	<h3>Contact forms</h3>
+	<div class="modal-container">
+		<div class="modal">
+<div class="contacts_form_wrapper open">
+	<div class="contacts_form" style="transform: translateX(60px);"><form id="appointment-form-1763132118" action="/ajax/appointment" method="post">
+<div id="form-appointment" class="contact_form">
+  <div id="form-appointment-over" style="background-color: black; position: absolute; display: none; z-index: 100;">
+    <div style="position: relative; top:50%; left: 50%; margin: -64px 0 0 -64px">
+      <img src="/images/loading51.gif" alt="">
+    </div>
+  </div>
+
+  <div class="note" style="margin: 0; width: auto;">
+    <div class="form_info">
+      <div id="form-appointment-output"></div>
+      <br>
+
+      <div style="color:#c03"></div>
+<h2 align="center">Запись на прием</h2>
+<!--		<div style="width: 80%; padding: 10px; margin: auto">-->
+		<form id="search-form" action="/search/result" method="GET"><div class="search_input_wrapper"><div class="search_input"><input autocomplete="on" class="form_input" name="SearchForm[txt]" id="SearchForm_txt" type="text"></div><div class="contact_button" style="order: 2; margin: 30px auto 0px auto;"><input class="contact_form_button" type="submit" name="yt0" value=" Поиск "></div></div><input style="order:3" name="SearchForm[sort]" id="SearchForm_sort" type="hidden" value="1"></form>
+		
+		<div style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-around; width: 80%; padding: 10px; margin: auto">
+			<div style="width:100px">Направление</div>
+			<div style="width:100px">            <select class="req" name="AppointmentForm[direction]" onchange="GetDoctors($(this).val(),0)" onblur="GetDoctors($(this).val(),0)" id="appointment_directions">
+              <option value="">Выберите направление</option>
+                                  <option value="2">Аллергология, иммунология</option>
+                                  <option value="191">Анестезиология</option>
+                                  <option value="3">Гастроэнтерология</option>
+                                  <option value="10">Гинекология</option>
+                                  <option value="27">Дерматология</option>
+                                  <option value="141">Дерматоонкология</option>
+                                  <option value="26">Диетология</option>
+                                  <option value="8">Кардиология</option>
+                                  <option value="11">Косметология</option>
+                                  <option value="139">Лабораторная диагностика</option>
+                                  <option value="13">Массаж</option>
+                                  <option value="14">МРТ</option>
+                                  <option value="15">Неврология </option>
+                                  <option value="521">Нейрофизиология</option>
+                                  <option value="338">Нефрология</option>
+                                  <option value="213">Озонотерапия</option>
+                                  <option value="25">Ортопедия и травматология</option>
+                                  <option value="7">Оториноларингология </option>
+                                  <option value="9">Офтальмология</option>
+                                  <option value="263">Плазмаферез  </option>
+                                  <option value="352">Пластическая хирургия </option>
+                                  <option value="149">Проктология</option>
+                                  <option value="474">Пульмонология</option>
+                                  <option value="81">Ревматология</option>
+                                  <option value="18">Рентген</option>
+                                  <option value="19">Сосудистая хирургия - флебология</option>
+                                  <option value="20">Терапия</option>
+                                  <option value="196">УЗИ</option>
+                                  <option value="21">Урология</option>
+                                  <option value="22">Функциональная диагностика</option>
+                                  <option value="183">Хирургия</option>
+                                  <option value="252">Центр коррекции фигуры</option>
+                                  <option value="23">Эндокринология</option>
+                                  <option value="24">Эндоскопия</option>
+                            </select></div>
+			</div>
+		
+<!--		</div>
+-->		
+<!--		<input class="search-input" placeholder="Искать по специалисту, адресу или направлению" type="text" value="" style="background-image: url(&quot;/static/images/5d5269742ffe11aec9a04c216b2da6cf.svg&quot;); font-family: GothamProRegular;">
+-->			
+      <table>
+          <tbody>
+        <tr>
+          <td><label for="AppointmentForm_direction">Направление</label></td>
+          <td>
+            <select class="req" name="AppointmentForm[direction]" onchange="GetDoctors($(this).val(),0)" onblur="GetDoctors($(this).val(),0)" id="appointment_directions">
+              <option value="">Выберите направление</option>
+                                  <option value="2">Аллергология, иммунология</option>
+                                  <option value="191">Анестезиология</option>
+                                  <option value="3">Гастроэнтерология</option>
+                                  <option value="10">Гинекология</option>
+                                  <option value="27">Дерматология</option>
+                                  <option value="141">Дерматоонкология</option>
+                                  <option value="26">Диетология</option>
+                                  <option value="8">Кардиология</option>
+                                  <option value="11">Косметология</option>
+                                  <option value="139">Лабораторная диагностика</option>
+                                  <option value="13">Массаж</option>
+                                  <option value="14">МРТ</option>
+                                  <option value="15">Неврология </option>
+                                  <option value="521">Нейрофизиология</option>
+                                  <option value="338">Нефрология</option>
+                                  <option value="213">Озонотерапия</option>
+                                  <option value="25">Ортопедия и травматология</option>
+                                  <option value="7">Оториноларингология </option>
+                                  <option value="9">Офтальмология</option>
+                                  <option value="263">Плазмаферез  </option>
+                                  <option value="352">Пластическая хирургия </option>
+                                  <option value="149">Проктология</option>
+                                  <option value="474">Пульмонология</option>
+                                  <option value="81">Ревматология</option>
+                                  <option value="18">Рентген</option>
+                                  <option value="19">Сосудистая хирургия - флебология</option>
+                                  <option value="20">Терапия</option>
+                                  <option value="196">УЗИ</option>
+                                  <option value="21">Урология</option>
+                                  <option value="22">Функциональная диагностика</option>
+                                  <option value="183">Хирургия</option>
+                                  <option value="252">Центр коррекции фигуры</option>
+                                  <option value="23">Эндокринология</option>
+                                  <option value="24">Эндоскопия</option>
+                            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="AppointmentForm_doctor_id">Специалист</label></td>
+          <td class="ajax-doctors" style="position: relative;">
+            <select class="req" name="AppointmentForm[doctor_id]" id="doctor_id_appointment">
+              <option value="">Выберите специалиста</option>
+            </select>
+          </td>
+        </tr>
+
+        
+
+        <tr class="not_req">
+          <td colspan="2">
+            <div class="appointment-note" style="text-align:center;">
+              Укажите проблему, с которой Вы хотели бы к нам обратиться.
+              В самое ближайшее время мы свяжемся с Вами для уточнения информации.
+            </div>
+          </td>
+        </tr>
+      </tbody></table>
+
+      <div class="form-group" style="margin: 15px 0;">
+        <label style="font-size: 13px; line-height: 1.5; display: flex;">
+            <input id="ytAppointmentForm_agree_to_personal_data" type="hidden" value="0" name="AppointmentForm[agree_to_personal_data]"><input name="AppointmentForm[agree_to_personal_data]" id="AppointmentForm_agree_to_personal_data" value="1" type="checkbox">          <p style="margin-left: 5px;">
+            Я даю
+            <a style="margin: 0 3px; color: #fff;" data-fancybox="" data-type="iframe" href="javascript:;" data-src="/documents/consent_pers_data.pdf" target="_blank">согласие</a>
+            на обработку моих персональных данных в соответствии c
+            <a style="margin: 0 3px; color: #fff;" data-fancybox="" data-type="iframe" href="javascript:;" data-src="/documents/conf_policy_24209.pdf" target="_blank">Политикой конфиденциальности</a>
+          </p>
+        </label>
+                </div>
+
+        <input value="Информационные материалы" name="AppointmentForm[appointment_form_page_title]" id="AppointmentForm_appointment_form_page_title" type="hidden">
+      <div style="margin: 10px auto; text-align: center;">
+          <input id="send_appointment_button-1763132118" class="contact_form_button" name="yt0" type="button" value="ОТПРАВИТЬ">      </div>
+    </div>
+  </div>
+</div>
+
+</form>
+<script type="text/javascript">
+  /*<![CDATA[*/
+  function GetDoctors(id, d_id) {
+    $.ajax({
+      type: "POST",
+      url: '/ajax/getdoctorsbydirection',
+      data: { id: id, d_id: d_id },
+      cache: false,
+      success: function (data) {
+        $('#doctor_id_appointment').html(data);
+        setTimeout(() => $('#doctor_id_appointment').selectpicker(), 10);
+      }
+    });
+  }
+
+  jQuery(function ($) {
+    $('#AppointmentForm_appointment_form_phone').mask('+7 (999) 999-99-99');
+
+    const now = new Date(new Date().setHours(0, 0, 0, 0));
+
+    $('#dp4').datepicker({
+      container: '#dp4',
+      language: "ru",
+      orientation: "bottom left",
+      beforeShowDay: (date) => date < now ? 'disabled' : ''
+    }).on('changeDate', () => $('#dp4').datepicker('hide'));
+
+    $('#send_appointment_button-1763132118').on('click', function () {
+      $.ajax({
+        type: 'POST',
+        url: '/ajax/appointment',
+        cache: false,
+        data: $(this).closest('form').serialize(),
+        beforeSend: () => {
+          $("#form-appointment-over").css({
+            width: $("#form-appointment").css("width"),
+            height: $("#form-appointment").css("height"),
+            opacity: 0.3,
+            display: "block"
+          });
+        },
+        success: function (data) {
+          const $output = $('#form-appointment-output');
+          if (data.includes('Спасибо')) {
+            $output.html('<div class="success">' + data + '</div>');
+            $('#appointment-form-1763132118')[0].reset();
+          } else {
+            $output.html(data);
+          }
+          $.colorbox.resize();
+        },
+        complete: () => $("#form-appointment-over").hide()
+      });
+      return false;
+    });
+  });
+  /*]]>*/
+</script></div></div>
+			</div>
+		</div>
+	
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

@@ -38,7 +38,7 @@ input:-internal-autofill-selected {
   background-repeat: no-repeat;
   background-position: 50% -30%;
   min-width: 60px;
-  height: 60px;
+  height: 60px;	
   border-radius: 40px;
   margin-right: 20px;
   border: solid 3px #fff; }

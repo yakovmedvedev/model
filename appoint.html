@@ -5,6 +5,14 @@
 <title>model</title>
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/mod.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-select.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-datepicker3.standalone.min.css" rel="stylesheet" type="text/css">
+<link href="css/normalizer.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.js"></script>
+<script type="text/javascript" src="js/retina.min.js"></script>
+
 </head>
 
 <body>
@@ -63,7 +71,10 @@
 				</div>
 			<div style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding: 10px; margin: 20px auto">
 			<div style="margin-right: 10px">Специалист</div>
-			<div>            <select class="req" name="AppointmentForm[direction]" onchange="GetDoctors($(this).val(),0)" onblur="GetDoctors($(this).val(),0)" id="appointment_directions">
+			<div>
+				<select class="req" name="AppointmentForm[doctor_id]" id="doctor_id_appointment" style="display: none;"><option data-htmlreplace="<span>Выберите специалиста</span>">Выберите специалиста</option><option data-htmlreplace="<div class='img_preview form-doctor-img' style='background-image: url(/images/doctors_new/134_small.png)'></div>Балашова Юлия Вячеславовна" value="134">Балашова Юлия Вячеславовна</option><option data-htmlreplace="<div class='img_preview form-doctor-img' style='background-image: url(/images/doctors_new/119_small.png)'></div>Варнель Ольга Леонидовна" value="119">Варнель Ольга Леонидовна</option><option data-htmlreplace="<div class='img_preview form-doctor-img' style='background-image: url(/images/doctors_new/129_small.png)'></div>Капустина Анна Александровна" value="129">Капустина Анна Александровна</option><option data-htmlreplace="<div class='img_preview form-doctor-img' style='background-image: url(/images/doctors_new/112_small.png)'></div>Пономарева Лариса Викторовна" value="112">Пономарева Лариса Викторовна</option><option data-htmlreplace="<div class='img_preview form-doctor-img' style='background-image: url(/images/doctors_new/156_small.png)'></div>Пышный Дмитрий Владимирович" value="156">Пышный Дмитрий Владимирович</option><option data-htmlreplace="<div class='img_preview form-doctor-img' style='background-image: url(/images/doctors_new/163_small.png)'></div>Рамазанова Гюнай Альнияз-кызы" value="163">Рамазанова Гюнай Альнияз-кызы</option></select>
+				<div class="btn-group bootstrap-select req open"><a href="#" class="dropdown-toggle clearfix" data-toggle="dropdown"><span class="iconmini-caret"></span><span class="filter-option"><span>Выберите специалиста</span></span></a><ul class="dropdown-menu" role="menu" style="overflow-y: auto;"><li rel="0" class="selected"><a tabindex="-1" href="#" class=""><span class="pull-left"><span>Выберите специалиста</span></span><i class="icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="-1" href="#" class=""><span class="pull-left"><div class="img_preview form-doctor-img" style="background-image: url(/images/doctors_new/134_small.png)"></div>Балашова Юлия Вячеславовна</span><i class="icon-ok check-mark"></i></a></li><li rel="2"><a tabindex="-1" href="#" class=""><span class="pull-left"><div class="img_preview form-doctor-img" style="background-image: url(/images/doctors_new/119_small.png)"></div>Варнель Ольга Леонидовна</span><i class="icon-ok check-mark"></i></a></li><li rel="3"><a tabindex="-1" href="#" class=""><span class="pull-left"><div class="img_preview form-doctor-img" style="background-image: url(/images/doctors_new/129_small.png)"></div>Капустина Анна Александровна</span><i class="icon-ok check-mark"></i></a></li><li rel="4"><a tabindex="-1" href="#" class=""><span class="pull-left"><div class="img_preview form-doctor-img" style="background-image: url(/images/doctors_new/112_small.png)"></div>Пономарева Лариса Викторовна</span><i class="icon-ok check-mark"></i></a></li><li rel="5"><a tabindex="-1" href="#" class=""><span class="pull-left"><div class="img_preview form-doctor-img" style="background-image: url(/images/doctors_new/156_small.png)"></div>Пышный Дмитрий Владимирович</span><i class="icon-ok check-mark"></i></a></li><li rel="6"><a tabindex="-1" href="#" class=""><span class="pull-left"><div class="img_preview form-doctor-img" style="background-image: url(/images/doctors_new/163_small.png)"></div>Рамазанова Гюнай Альнияз-кызы</span><i class="icon-ok check-mark"></i></a></li></ul></div>
+				<!--<select class="req" name="AppointmentForm[direction]" onchange="GetDoctors($(this).val(),0)" onblur="GetDoctors($(this).val(),0)" id="appointment_directions">
               <option value="">Выберите специалиста</option>
                                   <option value="2">Аллергология, иммунология</option>
                                   <option value="191">Анестезиология</option>
@@ -99,7 +110,8 @@
                                   <option value="252">Центр коррекции фигуры</option>
                                   <option value="23">Эндокринология</option>
                                   <option value="24">Эндоскопия</option>
-                            </select></div>
+                            </select>-->
+			  </div>
 				</div>
 			</div>
 </div>

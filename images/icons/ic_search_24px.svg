@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1333 28 18.885 18.885">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #007aff;
+        opacity: 0.75;
+      }
+    </style>
+  </defs>
+  <path id="ic_search_24px" class="cls-1" d="M16.5,14.878h-.853l-.3-.292a7.029,7.029,0,1,0-.756.756l.292.3V16.5l5.4,5.388,1.609-1.609Zm-6.479,0a4.859,4.859,0,1,1,4.859-4.859A4.852,4.852,0,0,1,10.019,14.878Z" transform="translate(1330 25)"/>
+</svg>

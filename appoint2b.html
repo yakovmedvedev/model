@@ -16,99 +16,156 @@
 </head>
 
 <body>
-	<h1>Модальное окно 2б</h1>
+	<h1>Модальное окно 2а2</h1>
 	<h2>Выбор специалиста</h2>
 	<h3>Contact forms</h3>
-	<div class="modal-container">
-		<div class="modal">
+<!--Контейнер с затемнением-->
+<div class="modal-container">
+<!--Модальное окно-->		
+	<div id="modal">
+<!--LOGO-->
+		<div id="modal_logo"></div>
+<!--Область контента-->
+		<div id="modal_content">
+			<h2 class="modal_header">Выберите специалиста</h2>
+			<div id="search" style="display: flex; width: 100%; margin-bottom: 30px;">
+				<form id="search-form" action="/search/result" method="GET"><div style="width: 100%;" class="search_input_wrapper"><div class="search_input"><input autocomplete="on" class="form_input" name="SearchForm[txt]" id="SearchForm_txt" type="text" placeholder="Искать специалиста"></div><div class="contact_button" style="order: 2; margin: 0 auto 0px auto;"><input class="contact_form_button" type="submit" name="yt0" value=" Поиск "></div></div><input style="order:3" name="SearchForm[sort]" id="SearchForm_sort" type="hidden" value="1"></form>
+			</div>		
+<!--Flex-wrapper для списка со скролом-->
+		<div id="modal_items_wrapper">
 
-			<h2 align="center">Выберите специалиста</h2>
-		<div style="display: flex; flex-direction: column; justify-content: center; height: 300px; padding: 10px; margin: auto">
-			<div id="search" style=" margin-bottom: 20px;">
-		<form id="search-form" action="/search/result" method="GET"><div style="width: 100%;" class="search_input_wrapper"><div class="search_input"><input autocomplete="on" class="form_input" name="SearchForm[txt]" id="SearchForm_txt" type="text" placeholder="Искать специалиста"></div><div class="contact_button" style="order: 2; margin: 0 auto 0px auto;"><input class="contact_form_button" type="submit" name="yt0" value=" Поиск "></div></div><input style="order:3" name="SearchForm[sort]" id="SearchForm_sort" type="hidden" value="1"></form>
-				</div>
-		
-		<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start; overflow-y: scroll; width: 80%; height: 300px; padding: 10px; margin: auto">
-			
-		<a href="appoint3.html" style="display:contents; text-decoration: none; color: white;">
-			<div style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; order: 0; width: 100%; padding: 10px;">
-			<div style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; align-items: center; order: 0; margin-right: auto;">
-									<div style="background-color: #3972D1; background-repeat: no-repeat; min-width: 60px; height: 60px; border: solid 3px #fff; border-radius: 40px; margin-right: 20px; overflow: hidden; background-size: cover; background-position: center center; order: 0; align-self: flex-start; background-image: url(images/icons/icon_auth_alter.svg); background-position: 50% -30%">
-					</div>
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						<div style="flex: 1; order: 1;">
-					<span style="font-weight: 500;">Любой свободный</span><br />
-				</div>
-			</div>
-			<div style="display: flex; flex-direction: column; align-items: center; align-self: flex-end; order: 1; margin-left: auto;">
-					<div style="display: flex; order: 0; background: url(images/icons/icon_calendar.svg); background-repeat: no-repeat; background-position: center; width: 36px; height: 36px; background-size: 22px 22px;"></div>
-					<div style="display: flex; order: 1; font-size: 10px; text-align: center; text-wrap: nowrap; color: white;">Доступен<br />c 01.01.2026</div>
-				
-			</div>
-		</div>
-			</a>
-			
-		<a href="appoint3.html" style="display:contents; text-decoration: none; color: white;">
-			<div style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; order: 0; width: 100%; padding: 10px;">
-			<div style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; align-items: center; order: 0; margin-right: auto;">
-									<div style="background-color: #3972D1; background-repeat: no-repeat; min-width: 60px; height: 60px; border: solid 3px #fff; border-radius: 40px; margin-right: 20px; overflow: hidden; background-size: cover; background-position: center center; order: 0; align-self: flex-start; background-image: url(images/doctors_new/134_small.png); background-position: 50% -30%">
-					</div>
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						<div style="flex: 1; order: 1;">
-					<span style="font-weight: 500;">Балашова Юлия Вячеславовна</span><br />Врач-оториноларинголог
-				</div>
-			</div>
-			<div style="display: flex; flex-direction: column; align-items: center; align-self: flex-end; order: 1; margin-left: auto;">
-					<div style="display: flex; order: 0; background: url(images/icons/icon_calendar.svg); background-repeat: no-repeat; background-position: center; width: 36px; height: 36px; background-size: 22px 22px;"></div>
-					<div style="display: flex; order: 1; font-size: 10px; text-align: center; text-wrap: nowrap; color: white;">Доступен<br />c 01.01.2026</div>
-				
-			</div>
-		</div>
-			</a>
-			
-		<div style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; order: 0; width: 100%; padding: 10px;">
-			<div style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; align-items: center; order: 0;">
-				<a href="appoint3.html" style="text-decoration: none; color: white;">
-					<div style="background-color: #3972D1; background-repeat: no-repeat; min-width: 60px; height: 60px; border: solid 3px #fff; border-radius: 40px; margin-right: 20px; overflow: hidden; background-size: cover; background-position: center center; order: 0; align-self: flex-start; background-image: url(images/doctors_new/119_small.png); background-position: 50% -30%">
+<!--Контейнер для списка со скролом-->			
+			<div id="modal_items">
+<!--Элемент списка-->				
+				<a class="modal_items_link" href="appoint3.html">
+					<div class="modal_item">
+						<div class="modal_item_avatar_name">
+							<div class="modal_item_avatar" style="background-image: url(images/icons/icon_auth_alter.svg);">
+							</div>
+							<div class="modal_item_name">
+								<span>Любой свободный</span><br />cxcxcxcxx
+							</div>
+						</div>
+						<div class="modal_item_shedule_icon_date">
+							<div class="modal_item_shedule_icon"></div>
+							<div class="modal_item_shedule_date">Доступен<br />c 01.01.2026</div>
+						</div>
 					</div>
 				</a>
-				<div style="flex: 1; order: 1;">
-					<a href="appoint3.html" style="text-decoration: none; color: white;">
-						<span style="font-weight: 500;">Варнель Ольга Леонидовна</span><br />Врач-оториноларинголог<br />
-Высшая квалификационная категория, заведующая отделением оториноларингологии</a>
-				</div>
-			</div>
-			<div style="display: flex; flex-direction: column; align-items: center; order: 1; margin-left: 20px;">
-				<a href="appoint3.html" style="text-decoration: none; color: white">
-					<div style="display: flex; order: 0; background: url(images/icons/icon_calendar.svg); background-repeat: no-repeat; background-position: center; width: 36px; height: 36px; background-size: 22px 22px;"></div>
+<!--/Элемент списка-->
+<!--Элемент списка-->				
+				<a class="modal_items_link" href="appoint3.html">
+					<div class="modal_item">
+						<div class="modal_item_avatar_name">
+							<div class="modal_item_avatar" style="background-image: url(images/doctors_new/134_small.png);">
+							</div>
+							<div class="modal_item_name">
+								<span>Балашова Юлия Вячеславовна</span><br />Врач-оториноларинголог
+							</div>
+						</div>
+						<div class="modal_item_shedule_icon_date">
+							<div class="modal_item_shedule_icon"></div>
+							<div class="modal_item_shedule_date">Доступен<br />c 01.01.2026</div>
+						</div>
+					</div>
 				</a>
-				<a href="appoint3.html" style="text-decoration: none; color: white">
-					<div style="display: flex; order: 1; font-size: 10px; text-align: center; text-wrap: nowrap; color: white;">Доступен<br />c 01.01.2026</div>
+<!--/Элемент списка-->
+<!--Элемент списка-->				
+				<a class="modal_items_link" href="appoint3.html">
+					<div class="modal_item">
+						<div class="modal_item_avatar_name">
+							<div class="modal_item_avatar" style="background-image: url(images/doctors_new/119_small.png);">
+							</div>
+							<div class="modal_item_name">
+								<span>Варнель Ольга Леонидовна</span><br />Врач-оториноларинголог<br />Высшая квалификационная категория, заведующая отделением оториноларингологии
+							</div>
+						</div>
+						<div class="modal_item_shedule_icon_date">
+							<div class="modal_item_shedule_icon"></div>
+							<div class="modal_item_shedule_date">Доступен<br />c 01.01.2026</div>
+						</div>
+					</div>
 				</a>
+<!--/Элемент списка-->
+<!--Элемент списка-->				
+				<a class="modal_items_link" href="appoint3.html">
+					<div class="modal_item">
+						<div class="modal_item_avatar_name">
+							<div class="modal_item_avatar" style="background-image: url(images/doctors_new/129_small.png);">
+							</div>
+							<div class="modal_item_name">
+								<span>Капустина Анна Александровна</span><br />Врач-оториноларинголог
+							</div>
+						</div>
+						<div class="modal_item_shedule_icon_date">
+							<div class="modal_item_shedule_icon"></div>
+							<div class="modal_item_shedule_date">Доступен<br />c 01.01.2026</div>
+						</div>
+					</div>
+				</a>
+<!--/Элемент списка-->
+<!--Элемент списка-->				
+				<a class="modal_items_link" href="appoint3.html">
+					<div class="modal_item">
+						<div class="modal_item_avatar_name">
+							<div class="modal_item_avatar" style="background-image: url(images/doctors_new/112_small.png);">
+							</div>
+							<div class="modal_item_name">
+								<span>Пономарева Лариса Викторовна</span><br />Врач-оториноларинголог<br />Высшая квалификационная категория
+							</div>
+						</div>
+						<div class="modal_item_shedule_icon_date">
+							<div class="modal_item_shedule_icon"></div>
+							<div class="modal_item_shedule_date">Доступен<br />c 01.01.2026</div>
+						</div>
+					</div>
+				</a>
+<!--/Элемент списка-->
+<!--Элемент списка-->				
+				<a class="modal_items_link" href="appoint3.html">
+					<div class="modal_item">
+						<div class="modal_item_avatar_name">
+							<div class="modal_item_avatar" style="background-image: url(images/doctors_new/156_small.png);">
+							</div>
+							<div class="modal_item_name">
+								<span>Пышный Дмитрий Владимирович</span><br />Врач-оториноларинголог<br />Высшая квалификационная категория, кандидат медицинских наук
+							</div>
+						</div>
+						<div class="modal_item_shedule_icon_date">
+							<div class="modal_item_shedule_icon"></div>
+							<div class="modal_item_shedule_date">Доступен<br />c 01.01.2026</div>
+						</div>
+					</div>
+				</a>
+<!--/Элемент списка-->
+<!--Элемент списка-->				
+				<a class="modal_items_link" href="appoint3.html">
+					<div class="modal_item">
+						<div class="modal_item_avatar_name">
+							<div class="modal_item_avatar" style="background-image: url(images/doctors_new/163_small.png);">
+							</div>
+							<div class="modal_item_name">
+								<span>Рамазанова Гюнай Альнияз-кызы</span><br />Врач-оториноларинголог<br />Кандидат медицинских наук
+							</div>
+						</div>
+						<div class="modal_item_shedule_icon_date">
+							<div class="modal_item_shedule_icon"></div>
+							<div class="modal_item_shedule_date">Доступен<br />c 01.01.2026</div>
+						</div>
+					</div>
+				</a>
+<!--/Элемент списка-->
+			
 			</div>
+<!--/Контейнер для списка со скролом-->
 		</div>
-			
-						<div style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; align-items: center; padding: 10px;">
-				<div style="background-color: #3972D1; background-repeat: no-repeat; min-width: 60px; height: 60px; border: solid 3px #fff; border-radius: 40px; margin-right: 20px; overflow: hidden; background-size: cover; background-position: center center; order: 0; align-self: flex-start; background-image: url(images/doctors_new/119_small.png); background-position: 50% -30%"></div><div style="flex: 1;">Варнель Ольга Леонидовна<br />Врач-оториноларинголог<br />
-Высшая квалификационная категория, заведующая отделением оториноларингологии</div></div>
-			
-						<div style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; align-items: center; padding: 10px;">
-				<div style="background-color: #3972D1; background-repeat: no-repeat; min-width: 60px; height: 60px; border: solid 3px #fff; border-radius: 40px; margin-right: 20px; overflow: hidden; background-size: cover; background-position: center center; order: 0; align-self: flex-start; background-image: url(images/doctors_new/129_small.png); background-position: 50% -30%"></div><div style="flex: 1;">Капустина Анна Александровна<br />Врач-оториноларинголог</div></div>
-			
-						<div style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; align-items: baseline; padding: 10px;">
-				<div style="background-color: #3972D1; background-repeat: no-repeat; min-width: 60px; height: 60px; border: solid 3px #fff; border-radius: 40px; margin-right: 20px; overflow: hidden; background-size: cover; background-position: center center; order: 0; align-self: flex-start; background-image: url(images/doctors_new/112_small.png); background-position: 50% -30%"></div><div style="height: auto;">Пономарева Лариса Викторовна<br />Врач-оториноларинголог<br />Высшая квалификационная категория</div></div>
-			
-									<div style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; align-items: baseline; padding: 10px;">
-				<div style="background-color: #3972D1; background-repeat: no-repeat; min-width: 60px; height: 60px; border: solid 3px #fff; border-radius: 40px; margin-right: 20px; overflow: hidden; background-size: cover; background-position: center center; order: 0; align-self: flex-start; background-image: url(images/doctors_new/156_small.png); background-position: 50% -30%"></div><div style="height: auto;">Пышный Дмитрий Владимирович<br />Врач-оториноларинголог<br />
-Высшая квалификационная категория, кандидат медицинских наук</div></div>
-			
-												<div style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; align-items: baseline; padding: 10px;">
-				<div style="background-color: #3972D1; background-repeat: no-repeat; min-width: 60px; height: 60px; border: solid 3px #fff; border-radius: 40px; margin-right: 20px; overflow: hidden; background-size: cover; background-position: center center; order: 0; align-self: flex-start; background-image: url(images/doctors_new/163_small.png); background-position: 50% -30%"></div><div style="height: auto;">Рамазанова Гюнай Альнияз-кызы<br />Врач-оториноларинголог<br />
-Кандидат медицинских наук
-</div></div>
-			
-			</div>
+<!--/Flex-wrapper для списка со скролом-->
+	</div>
+<!--/Область контента-->
 </div>
-			</div>
-		</div>
+<!--/Модальное окно-->		
+</div>
+<!--/Контейнер с затемнением-->
 	
 <p>&nbsp;</p>
 <p>&nbsp;</p>

@@ -142,7 +142,7 @@ html, body {
 .modal_item_shedule_icon {
 	display: flex;
 	order: 0;
-	background: url("../images/icons/icon_calendar.svg");
+	background: url(../images/icons/icon_calendar.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 30px;
@@ -164,7 +164,7 @@ html, body {
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 	order: 0;
 	width: 100%;
 	padding: 8px 30px;
@@ -181,10 +181,10 @@ html, body {
 	font-weight: normal;
 	margin: 10px 0;
 }
-/*#modal_close {
-	display: none;
-}*/
-#closemark {
+#modal_close_container {
+	visibility: hidden;
+}
+#modal_closemark {
 	visibility: hidden;
 }
 
@@ -215,24 +215,41 @@ html, body {
 	align-items: flex-start;
 	width: 100%;
 	height: 100%;
-	margin: 0;
+	margin: 0 0 80px 0;
 	border: none;
 }
 #modal_logo {
 	min-height: 24px;
-	margin-top: 10px;
     align-self: center;
 	margin-top: -20px;
 }
-/*#modal_close {
+#modal_close_container {
+	display: flex;
 	visibility: visible;
-}*/
-#closemark {
+	width: 100%;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+#modal_closemark {
 	visibility: visible;
+	display: flex;
+	align-self: flex-end;
+	background-color: #FF0000;
+	background-repeat: no-repeat;
+	width: 30px;
+	min-height: 30px;
+	border: none;
+	border-radius: 40px;
+	order: 0;
+	background-image: url(../images/icons/close_mark_wh.svg);
+	background-size: 60% 60%;
+	background-position: 50% 50%;
+	margin: 2px;
 }
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:375px) {
 .modal_item {
 	word-break: break-all;
 }

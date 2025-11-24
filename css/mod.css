@@ -70,6 +70,32 @@ html, body {
 	margin: auto
 }
 
+#modal_name {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 20px auto;
+}
+
+#modal_icon_back {
+	display: flex;
+	background-image: url(../images/icons/arrow_left_wh.svg);
+	background-size: 18px 18px;
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+}
+
+#modal_header {
+	display: flex;
+	text-align: center;
+	margin: 0 20px;
+	color: white;
+	font-size: 1rem;
+	font-weight: normal;
+}
+
 #modal_items_wrapper {
 	display: flex;
 	flex-direction: column;
@@ -83,13 +109,19 @@ html, body {
 	overflow-y: scroll;
 }
 
-.modal_items {
-	display: block;
+#modal_items {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
 	padding: 0;
 }
 
 .modal_items_link, a .modal_items_link:active, a .modal_items_link:hover, a .modal_items_link:visited {
 	display: contents;
+	text-align: center;
 	text-decoration: none;
 	color: white;
 }
@@ -114,8 +146,36 @@ html, body {
 	overflow: hidden;
 	background-size: cover;
 	order: 0;
-	align-self: flex-start;
 	background-position: 50% -30%;
+}
+
+.modal_item_avatar_default {
+	background-image: url(../images/icons/spec.svg);
+	background-color: #3972D1;
+	background-repeat: no-repeat;
+	background-size: 80% 80%;
+	min-width: 60px; height: 60px;
+	border: solid 3px #fff;
+	border-radius: 40px;
+	margin-right: 20px;
+	overflow: hidden;
+	order: 0;
+	background-position: 50% 110%;
+}
+
+.modal_item_avatar_dir {
+	background-image: url(../images/icons/icon_menu_directions_wh.svg);
+	background-size: 40px 40px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #3972D1;
+	min-width: 60px; height: 60px;
+	border: solid 3px #fff;
+	border-radius: 40px;
+	margin-right: 20px;
+	overflow: hidden;
+	order: 0;
+	background-position: 50% 50%;
 }
 
 .modal_item_name {
@@ -170,17 +230,10 @@ html, body {
 	padding: 8px 30px;
 }
 
-.modal_item:hover {
+a .modal_item:hover {
 	background: #365382;
 }
 
-.modal_header {
-	align: center;
-	color: white;
-	font-size: 1.2rem;
-	font-weight: normal;
-	margin: 10px 0;
-}
 #modal_close_container {
 	visibility: hidden;
 }

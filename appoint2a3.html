@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>model</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/mod.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-select.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-datepicker3.standalone.min.css" rel="stylesheet" type="text/css">
+<link href="css/normalizer.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.js"></script>
+<script type="text/javascript" src="js/retina.min.js"></script>
+
+</head>
+
+<body>
+	<h1>Модальное окно 2а3</h1>
+	<h2>Выбор времени</h2>
+<!--Контейнер с затемнением-->
+<div class="modal-container">
+<!--Модальное окно-->		
+	<div id="modal">
+		<div id="modal_close_container"><div id="modal_closemark"></div></div>
+<!--LOGO-->
+		<div id="modal_logo"></div>
+		
+<!--Область контента-->
+		<div id="modal_content">
+<!--Заголовок модального окна-->
+			<div id="modal_name">
+				<a href="appoint2a2.html"><div id="modal_icon_back"></div></a>
+				<div id="modal_header">Выберите время</div>
+			</div>
+	
+<!--Flex-wrapper для списка со скролом-->
+		<div id="modal_items_wrapper">
+
+<!--Контейнер для списка со скролом-->			
+			<div id="modal_items">
+
+<!--Элемент списка-->				
+				
+					<div class="modal_item">
+						<div class="modal_item_avatar_name">
+							<div class="modal_item_avatar" style="background-image: url(images/doctors_new/134_small.png);">
+							</div>
+							<div class="modal_item_name">
+								<span>Балашова Юлия Вячеславовна</span><br />Врач-оториноларинголог
+							</div>
+						</div>
+					</div>
+
+<!--/Элемент списка-->
+<!--Элемент списка - расписание-->				
+<div id="modal_shedule" style="display: flex; flex-direction: column; flex-wrap: nowrap; align-items: flex-start; justify-content: flex-start; padding: 4px;">
+	<div id="modal_shedule_month" style="display: flex;  align-items: flex-start; justify-content: flex-start; margin: 20px 0; font-size: 1rem; color: #fff;">Ноябрь 2025</div>
+	<div id="modal_shedule_table" style="display: flex; flex-direction: row; flex-wrap: nowrap; align-items: flex-start; font-size: 0.8rem; color: #fff;">
+		<div id="modal_shedule_table_day" style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 0 20px;"><div>Пн.</div><div>24</div><div>09:00</div><div>10:00</div><div>11:00</div><div>11:30</div><div>12:00</div><div>12:30</div><div>13:30</div>
+			</div>
+		<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 0 6px;"><div>Вт.</div><div>25</div><div>09:00</div><div>10:00</div><div>11:00</div><div>11:30</div><div>12:00</div><div>12:30</div><div>13:30</div>
+			</div>В ПРОЦЕССЕ ВЕРСТКИ
+		</div>
+				</div>
+<!--/Элемент списка - расписание-->
+
+			
+			</div>
+<!--/Контейнер для списка со скролом-->
+		</div>
+<!--/Flex-wrapper для списка со скролом-->
+	</div>
+<!--/Область контента-->
+</div>
+<!--/Модальное окно-->		
+</div>
+<!--/Контейнер с затемнением-->
+
+</body>
+</html>

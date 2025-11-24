@@ -17,18 +17,24 @@
 </head>
 
 <body>
-	<h1>Модальное окно 2а2</h1>
-	<h2>Выбор специалиста</h2>
-	<h3>Contact forms</h3>
+	<h1>Модальное окно 2а</h1>
+	<h2>Выбор направления</h2>
 <!--Контейнер с затемнением-->
 <div class="modal-container">
 <!--Модальное окно-->		
 	<div id="modal">
+		<div id="modal_close_container"><div id="modal_closemark"></div></div>
 <!--LOGO-->
 		<div id="modal_logo"></div>
+		
 <!--Область контента-->
 		<div id="modal_content">
-			<h2 class="modal_header">Выберите направление</h2>
+<!--Заголовок модального окна-->
+			<div id="modal_name">
+				<a href="appoint1.html"><div id="modal_icon_back"></div></a>
+				<div id="modal_header">Выберите направление</div>
+			</div>
+<!--Поиск-->
 			<div id="search" style="display: flex; width: 90%; margin-bottom: 30px;">
 				<form id="search-form" action="/search/result" method="GET"><div style="width: 100%;" class="search_input_wrapper"><div class="search_input"><input autocomplete="on" class="form_input" name="SearchForm[txt]" id="SearchForm_txt" type="text" placeholder="Искать направление"></div><div class="contact_button" style="order: 2; margin: 0 auto 0px auto;"><input class="contact_form_button" type="submit" name="yt0" value=" Поиск "></div></div><input style="order:3" name="SearchForm[sort]" id="SearchForm_sort" type="hidden" value="1"></form>
 			</div>		
@@ -38,120 +44,274 @@
 <!--Контейнер для списка со скролом-->			
 			<div id="modal_items">
 <!--Элемент списка-->				
-				<a class="modal_items_link" href="appoint3.html">
+				<a class="modal_items_link" href="appoint2a2.html">
 					<div class="modal_item">
 						<div class="modal_item_avatar_name">
-							<div class="modal_item_avatar" style="background-image: url(images/icons/icon_auth_alter.svg);">
+							<div class="modal_item_avatar_dir">
 							</div>
 							<div class="modal_item_name">
-								<span>Любой свободный</span><br />cxcxcxcxx
+								<span>Аллергология</span>
 							</div>
-						</div>
-						<div class="modal_item_shedule_icon_date">
-							<div class="modal_item_shedule_icon"></div>
-							<div class="modal_item_shedule_date">Доступен<br />c 01.01.2026</div>
 						</div>
 					</div>
 				</a>
 <!--/Элемент списка-->
 <!--Элемент списка-->				
-				<a class="modal_items_link" href="appoint3.html">
+				<a class="modal_items_link" href="appoint2a2.html">
 					<div class="modal_item">
 						<div class="modal_item_avatar_name">
-							<div class="modal_item_avatar" style="background-image: url(images/doctors_new/134_small.png);">
+							<div class="modal_item_avatar_dir">
 							</div>
 							<div class="modal_item_name">
-								<span>Балашова Юлия Вячеславовна</span><br />Врач-оториноларинголог
+								<span>Анестезиология</span>
 							</div>
-						</div>
-						<div class="modal_item_shedule_icon_date">
-							<div class="modal_item_shedule_icon"></div>
-							<div class="modal_item_shedule_date">Доступен<br />c 01.01.2026</div>
 						</div>
 					</div>
 				</a>
 <!--/Элемент списка-->
 <!--Элемент списка-->				
-				<a class="modal_items_link" href="appoint3.html">
+				<a class="modal_items_link" href="appoint2a2.html">
 					<div class="modal_item">
 						<div class="modal_item_avatar_name">
-							<div class="modal_item_avatar" style="background-image: url(images/doctors_new/119_small.png);">
+							<div class="modal_item_avatar_dir">
 							</div>
 							<div class="modal_item_name">
-								<span>Варнель Ольга Леонидовна</span><br />Врач-оториноларинголог<br />Высшая квалификационная категория, заведующая отделением оториноларингологии
+								<span>Гастроэнтерология</span>
 							</div>
-						</div>
-						<div class="modal_item_shedule_icon_date">
-							<div class="modal_item_shedule_icon"></div>
-							<div class="modal_item_shedule_date">Доступен<br />c 01.01.2026</div>
 						</div>
 					</div>
 				</a>
 <!--/Элемент списка-->
 <!--Элемент списка-->				
-				<a class="modal_items_link" href="appoint3.html">
+				<a class="modal_items_link" href="appoint2a2.html">
 					<div class="modal_item">
 						<div class="modal_item_avatar_name">
-							<div class="modal_item_avatar" style="background-image: url(images/doctors_new/129_small.png);">
+							<div class="modal_item_avatar_dir">
 							</div>
 							<div class="modal_item_name">
-								<span>Капустина Анна Александровна</span><br />Врач-оториноларинголог
+								<span>Гинекология</span>
 							</div>
-						</div>
-						<div class="modal_item_shedule_icon_date">
-							<div class="modal_item_shedule_icon"></div>
-							<div class="modal_item_shedule_date">Доступен<br />c 01.01.2026</div>
 						</div>
 					</div>
 				</a>
 <!--/Элемент списка-->
 <!--Элемент списка-->				
-				<a class="modal_items_link" href="appoint3.html">
+				<a class="modal_items_link" href="appoint2a2.html">
 					<div class="modal_item">
 						<div class="modal_item_avatar_name">
-							<div class="modal_item_avatar" style="background-image: url(images/doctors_new/112_small.png);">
+							<div class="modal_item_avatar_dir">
 							</div>
 							<div class="modal_item_name">
-								<span>Пономарева Лариса Викторовна</span><br />Врач-оториноларинголог<br />Высшая квалификационная категория
+								<span>Дерматология</span>
 							</div>
-						</div>
-						<div class="modal_item_shedule_icon_date">
-							<div class="modal_item_shedule_icon"></div>
-							<div class="modal_item_shedule_date">Доступен<br />c 01.01.2026</div>
 						</div>
 					</div>
 				</a>
 <!--/Элемент списка-->
 <!--Элемент списка-->				
-				<a class="modal_items_link" href="appoint3.html">
+				<a class="modal_items_link" href="appoint2a2.html">
 					<div class="modal_item">
 						<div class="modal_item_avatar_name">
-							<div class="modal_item_avatar" style="background-image: url(images/doctors_new/156_small.png);">
+							<div class="modal_item_avatar_dir">
 							</div>
 							<div class="modal_item_name">
-								<span>Пышный Дмитрий Владимирович</span><br />Врач-оториноларинголог<br />Высшая квалификационная категория, кандидат медицинских наук
+								<span>Дерматоонкология</span>
 							</div>
-						</div>
-						<div class="modal_item_shedule_icon_date">
-							<div class="modal_item_shedule_icon"></div>
-							<div class="modal_item_shedule_date">Доступен<br />c 01.01.2026</div>
 						</div>
 					</div>
 				</a>
 <!--/Элемент списка-->
 <!--Элемент списка-->				
-				<a class="modal_items_link" href="appoint3.html">
+				<a class="modal_items_link" href="appoint2a2.html">
 					<div class="modal_item">
 						<div class="modal_item_avatar_name">
-							<div class="modal_item_avatar" style="background-image: url(images/doctors_new/163_small.png);">
+							<div class="modal_item_avatar_dir">
 							</div>
 							<div class="modal_item_name">
-								<span>Рамазанова Гюнай Альнияз-кызы</span><br />Врач-оториноларинголог<br />Кандидат медицинских наук
+								<span>Диетология</span>
 							</div>
 						</div>
-						<div class="modal_item_shedule_icon_date">
-							<div class="modal_item_shedule_icon"></div>
-							<div class="modal_item_shedule_date">Доступен<br />c 01.01.2026</div>
+					</div>
+				</a>
+<!--/Элемент списка-->
+<!--Элемент списка-->				
+				<a class="modal_items_link" href="appoint2a2.html">
+					<div class="modal_item">
+						<div class="modal_item_avatar_name">
+							<div class="modal_item_avatar_dir">
+							</div>
+							<div class="modal_item_name">
+								<span>Кардиология</span>
+							</div>
+						</div>
+					</div>
+				</a>
+<!--/Элемент списка-->
+<!--Элемент списка-->				
+				<a class="modal_items_link" href="appoint2a2.html">
+					<div class="modal_item">
+						<div class="modal_item_avatar_name">
+							<div class="modal_item_avatar_dir">
+							</div>
+							<div class="modal_item_name">
+								<span>Дерматокосметология</span>
+							</div>
+						</div>
+					</div>
+				</a>
+<!--/Элемент списка-->
+<!--Элемент списка-->				
+				<a class="modal_items_link" href="appoint2a2.html">
+					<div class="modal_item">
+						<div class="modal_item_avatar_name">
+							<div class="modal_item_avatar_dir">
+							</div>
+							<div class="modal_item_name">
+								<span>Лабораторная диагностика</span>
+							</div>
+						</div>
+					</div>
+				</a>
+<!--/Элемент списка-->
+<!--Элемент списка-->				
+				<a class="modal_items_link" href="appoint2a2.html">
+					<div class="modal_item">
+						<div class="modal_item_avatar_name">
+							<div class="modal_item_avatar_dir">
+							</div>
+							<div class="modal_item_name">
+								<span>Магнитно-резонансная томография (МРТ)</span>
+							</div>
+						</div>
+					</div>
+				</a>
+<!--/Элемент списка-->
+<!--Элемент списка-->				
+				<a class="modal_items_link" href="appoint2a2.html">
+					<div class="modal_item">
+						<div class="modal_item_avatar_name">
+							<div class="modal_item_avatar_dir">
+							</div>
+							<div class="modal_item_name">
+								<span>Неврология</span>
+							</div>
+						</div>
+					</div>
+				</a>
+<!--/Элемент списка-->
+<!--Элемент списка-->				
+				<a class="modal_items_link" href="appoint2a2.html">
+					<div class="modal_item">
+						<div class="modal_item_avatar_name">
+							<div class="modal_item_avatar_dir">
+							</div>
+							<div class="modal_item_name">
+								<span>Нейрофизиология</span>
+							</div>
+						</div>
+					</div>
+				</a>
+<!--/Элемент списка-->
+<!--Элемент списка-->				
+				<a class="modal_items_link" href="appoint2a2.html">
+					<div class="modal_item">
+						<div class="modal_item_avatar_name">
+							<div class="modal_item_avatar_dir">
+							</div>
+							<div class="modal_item_name">
+								<span>Нефрология</span>
+							</div>
+						</div>
+					</div>
+				</a>
+<!--/Элемент списка-->
+<!--Элемент списка-->				
+				<a class="modal_items_link" href="appoint2a2.html">
+					<div class="modal_item">
+						<div class="modal_item_avatar_name">
+							<div class="modal_item_avatar_dir">
+							</div>
+							<div class="modal_item_name">
+								<span>Озонотерапия</span>
+							</div>
+						</div>
+					</div>
+				</a>
+<!--/Элемент списка-->
+<!--Элемент списка-->				
+				<a class="modal_items_link" href="appoint2a2.html">
+					<div class="modal_item">
+						<div class="modal_item_avatar_name">
+							<div class="modal_item_avatar_dir">
+							</div>
+							<div class="modal_item_name">
+								<span>Ортопедия и травматология</span>
+							</div>
+						</div>
+					</div>
+				</a>
+<!--/Элемент списка-->
+<!--Элемент списка-->				
+				<a class="modal_items_link" href="appoint2a2.html">
+					<div class="modal_item">
+						<div class="modal_item_avatar_name">
+							<div class="modal_item_avatar_dir">
+							</div>
+							<div class="modal_item_name">
+								<span>Оториноларингология (ЛОР)</span>
+							</div>
+						</div>
+					</div>
+				</a>
+<!--/Элемент списка-->
+<!--Элемент списка-->				
+				<a class="modal_items_link" href="appoint2a2.html">
+					<div class="modal_item">
+						<div class="modal_item_avatar_name">
+							<div class="modal_item_avatar_dir">
+							</div>
+							<div class="modal_item_name">
+								<span>Офтальмология</span>
+							</div>
+						</div>
+					</div>
+				</a>
+<!--/Элемент списка-->
+<!--Элемент списка-->				
+				<a class="modal_items_link" href="appoint2a2.html">
+					<div class="modal_item">
+						<div class="modal_item_avatar_name">
+							<div class="modal_item_avatar_dir">
+							</div>
+							<div class="modal_item_name">
+								<span>Пластическая хирургия</span>
+							</div>
+						</div>
+					</div>
+				</a>
+<!--/Элемент списка-->
+<!--Элемент списка-->				
+				<a class="modal_items_link" href="appoint2a2.html">
+					<div class="modal_item">
+						<div class="modal_item_avatar_name">
+							<div class="modal_item_avatar_dir">
+							</div>
+							<div class="modal_item_name">
+								<span>Проктология</span>
+							</div>
+						</div>
+					</div>
+				</a>
+<!--/Элемент списка-->
+<!--Элемент списка-->				
+				<a class="modal_items_link" href="appoint2a2.html">
+					<div class="modal_item">
+						<div class="modal_item_avatar_name">
+							<div class="modal_item_avatar_dir">
+							</div>
+							<div class="modal_item_name">
+								<span>Пульмонология</span>
+							</div>
 						</div>
 					</div>
 				</a>
@@ -167,8 +327,6 @@
 <!--/Модальное окно-->		
 </div>
 <!--/Контейнер с затемнением-->
-	
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
 </body>
 </html>

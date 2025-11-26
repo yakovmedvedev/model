@@ -48,6 +48,11 @@ html, body {
     color: #FFFFFF;
 }
 
+#modal a {
+	color: #fff;
+	text-decoration: none;
+}
+
 #modal_logo {
 	display: flex;
 	order: 1;
@@ -216,8 +221,6 @@ html, body {
 .modal_items_link, a .modal_items_link:active, a .modal_items_link:hover, a .modal_items_link:visited {
 	display: contents;
 	text-align: center;
-	text-decoration: none;
-	color: white;
 }
 
 .modal_item_avatar_name, .modal_item_dir_avatar_name {

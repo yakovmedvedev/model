@@ -220,7 +220,7 @@ html, body {
 	color: white;
 }
 
-.modal_item_avatar_name {
+.modal_item_avatar_name, .modal_item_dir_avatar_name {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -228,6 +228,10 @@ html, body {
 	align-items: flex-start;
 	order: 0;
 	margin-right: auto;
+}
+
+.modal_item_dir_avatar_name {
+	align-items: center;
 }
 
 .modal_item_avatar {

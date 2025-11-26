@@ -118,10 +118,9 @@ html, body {
 	display: flex; 
 	align-items: flex-start;
 	justify-content: flex-start;
-	margin: 10px 0;
-	font-size: 1rem;
-	font-size: 1.4rem;
 	margin: 10px 20px;
+	font-size: 1.4rem;
+	font-weight: 400;
 }
 
 #modal_shedule_table {
@@ -131,6 +130,32 @@ html, body {
 	align-items: flex-start;
 	justify-content: space-between;
 	width: 100%;
+}
+
+#modal_shedule_table_arrow_left {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 18px;
+	min-height: 18px;
+	margin: 10px 0px;
+	background-image: url(../images/icons/arrow_left_wh.svg);
+	background-size: 18px 18px;
+	background-repeat: no-repeat;
+}
+
+#modal_shedule_table_arrow_right {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 18px;
+	min-height: 18px;
+	margin: 10px 0px;
+	background-image: url(../images/icons/arrow_right_wh.svg);
+	background-size: 18px 18px;
+	background-repeat: no-repeat;
 }
 
 .modal_shedule_table_day {
@@ -147,7 +172,7 @@ html, body {
 }
 
 .modal_shedule_day_number {
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	font-weight: 600;
 	margin-bottom: 10px;
 }
@@ -156,8 +181,12 @@ html, body {
 	padding: 8px;
 	background: #365382;
 	border-radius: 10px;
-	margin: 6px 0;
+	margin: 2px 0;
+	font-size: 1.2rem;
 	font-weight: 400;
+}
+.modal_shedule_time_available:hover {
+	background: #f00;
 }
 
 #modal_items_wrapper {
@@ -172,7 +201,6 @@ html, body {
 	margin: auto;
 	border: 1px solid #659FFD;
 	overflow-y: scroll;
-	overflow-x: scroll;
 }
 
 #modal_items {
@@ -197,7 +225,7 @@ html, body {
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: flex-start;
 	order: 0;
 	margin-right: auto;
 }
@@ -368,8 +396,24 @@ a .modal_item:hover {
 }
 }
 
+@media screen and (max-width:425px) {
+.modal_shedule_time_available {
+	font-size: 1rem;
+}
+}
+
 @media screen and (max-width:375px) {
 .modal_item {
 	overflow-wrap:  anywhere;
 }
+.modal_shedule_time_available {
+	padding: 4px 2px;
+	border-radius: 4px;
+	font-size: 0.8rem;
+	font-weight: normal;
+}
+}
+
+@media screen and (max-width:320px) {
+
 }

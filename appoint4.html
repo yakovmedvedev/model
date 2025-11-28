@@ -31,7 +31,7 @@
 		<div id="modal_content">
 <!--Заголовок модального окна-->
 			<div id="modal_name">
-				<a href="appoint1.html"><div id="modal_icon_back"></div></a>
+				<a href="appoint2a3.html"><div id="modal_icon_back"></div></a>
 				<div id="modal_header">Подтвердите запись</div>
 			</div>
 		
@@ -40,49 +40,44 @@
 
 <!--Контейнер для списка со скролом-->			
 			<div id="modal_items">
-<!--Элемент списка-->				
-					<div class="modal_item" style="justify-content: center; text-align: center;">
+<!--Элемент списка - request-->				
+				<div class="modal_item" style="justify-content: center; text-align: center;">
 Заполните форму для подтверждения Вашего номера. На ваш номер будет выслан код подтверждения.
-
-					</div>
+				</div>
 <!--/Элемент списка-->
-				<!--Элемент списка-->				
-
+<!--Элемент списка - phone number-->				
 				<div class="modal_item" style="justify-content: center;">
-							<input id="modal_phone_req" style="width: 52%; padding: 0 5px; font-size: 1rem; color: #365382; border: 0px; border-radius: 6px; height: 32px; background-color: #fff; font-family: Rubik, sans-serif;" class="phone_number req" required="required" placeholder="(xxx) xxx-xx-xx" name="CallbackForm[callback_form_phone]" type="text" maxlength="15">
-						</div>
-				<!--/Элемент списка-->
-								<!--Элемент списка-->				
-
-				<div class="modal_item" style="justify-content: center;">
-<input style="background: #4573d4; box-shadow: 0px 0px 2px 1px; border-radius: 6px; padding: 10px 40px; font-family: Rubik, sans-serif; font-size: 18px; color: #fff; cursor: pointer; width: auto; height: auto; transition: all ease-in-out 0.2s; border: 0;" name="yt0" type="button" value="Получить код">
-						</div>
-				<!--/Элемент списка-->
-				<!--Элемент списка-->				
-					<div class="modal_item" style="justify-content: center; text-align: center;">
-Введите код из SMS
-					</div>
+					<input id="modal_phone_number" required="required" placeholder="(xxx) xxx-xx-xx" name="CallbackForm[callback_form_phone]" type="text" maxlength="15">
+				</div>
 <!--/Элемент списка-->
-				<!--Элемент списка-->				
-
+<!--Элемент списка - button-->
 				<div class="modal_item" style="justify-content: center;">
-							<input id="modal_phone_req2" style="width: 30%; padding: 0 5px; font-size: 1rem; color: #365382; border: 0px; border-radius: 6px; height: 32px; background-color: #fff; font-family: Rubik, sans-serif;" class="phone_number req" required="required" placeholder="XXXX" name="CallbackForm[callback_form_phone]" type="text" maxlength="15">
-						</div>
-				<!--/Элемент списка-->
-								<!--Элемент списка-->				
-
+					<input class="modal_button" name="yt0" type="button" value="Получить код">
+				</div>
+<!--/Элемент списка-->
+<!--Элемент списка - request-->				
+				<div class="modal_item" style="justify-content: center; text-align: center;">
+					Введите код из SMS
+				</div>
+<!--/Элемент списка-->
+<!--Элемент списка - code-->
 				<div class="modal_item" style="justify-content: center;">
-<input id="send_callback_button-1764167039" class="contact_form_button" name="yt0" type="button" value="Подтвердить код">
-						</div>
-				<!--/Элемент списка-->
-<!--Элемент списка-->				
+					<input id="modal_phone_req2" style="width: 30%; padding: 0 5px; font-size: 1rem; color: #365382; border: 0px; border-radius: 6px; height: 32px; background-color: #fff; font-family: Rubik, sans-serif;" class="phone_number req" required="required" placeholder="XXXX" name="CallbackForm[callback_form_phone]" type="text" maxlength="15">
+				</div>
+<!--/Элемент списка-->
+<!--Элемент списка-->
+				<div class="modal_item" style="justify-content: center;">
+					<input class="modal_button" name="yt0" type="button" value="Подтвердить код">
+				</div>
+<!--/Элемент списка-->
+<!--Элемент списка - Appointment info-->				
 				<a class="modal_items_link" href="appoint2a3.html">
-					<div class="modal_item" style="margin: 20px 0;">
+					<div class="modal_item">
 						<div class="modal_item_avatar_name">
 							<div class="modal_item_avatar" style="background-image: url(images/doctors_new/134_small.png);">
 							</div>
 							<div class="modal_item_name">
-								<span>Ваша запись:</span><br />
+								<span>Ваша запись:</span><br /><br />
 								<span>Балашова Юлия Вячеславовна</span><br />Врач-оториноларинголог<br />
 								<span>Адрес:</span><br />Москва, ул. Полтавская, д.2<br />
 								<span>Время и дата записи:</span><br />26 ноября, среда, 10.00<br />
@@ -91,23 +86,23 @@
 					</div>
 				</a>
 <!--/Элемент списка-->
-												<!--Элемент списка-->				
-
-				<div class="modal_item">
-        <label style="display: flex; justify-content: space-between; align-items: baseline;">
-            <input id="ytCallbackForm_agree_to_personal_data" type="hidden" value="0" name="CallbackForm[agree_to_personal_data]"><input name="CallbackForm[agree_to_personal_data]" id="CallbackForm_agree_to_personal_data" value="1" type="checkbox"><p>Я даю
-            <a style="margin: 0 3px; color: #fff;" data-fancybox="" data-type="iframe" href="javascript:;" data-src="/documents/consent_pers_data.pdf" target="_blank">согласие</a>
-            на обработку моих персональных данных в соответствии c
-            <a style="margin: 0 3px; color: #fff;" data-fancybox="" data-type="iframe" href="javascript:;" data-src="/documents/conf_policy_24209.pdf" target="_blank">Политикой конфиденциальности</a></p>
-        </label>
-						</div>
-				<!--/Элемент списка-->
-												<!--Элемент списка-->				
-
+<!--Элемент списка-->
 				<div class="modal_item" style="justify-content: center;">
-<input id="send_callback_button-1764167039" class="contact_form_button" name="yt0" type="button" value="Подтвердить">
+					<div id="modal_agree">
+					<!--<label style="display: flex; justify-content: space-between; align-items: baseline;">-->
+            		<input id="ytCallbackForm_agree_to_personal_data" type="hidden" value="0" name="CallbackForm[agree_to_personal_data]">
+						<div class="modal_checkbox"><input name="CallbackForm[agree_to_personal_data]" value="1" type="checkbox"></div>
+						<div style="display: flex;"><label for "checkbox">Я даю <a style="margin: 0 3px; color: #fff;" data-fancybox="" data-type="iframe" href="javascript:;" data-src="/documents/consent_pers_data.pdf" target="_blank">согласие</a> на обработку моих персональных данных в соответствии c <a style="margin: 0 3px; color: #fff;" data-fancybox="" data-type="iframe" href="javascript:;" data-src="/documents/conf_policy_24209.pdf" target="_blank">Политикой конфиденциальности</a>
+						</label></div>
 						</div>
-				<!--/Элемент списка-->
+				</div>
+<!--/Элемент списка-->
+<!--Элемент списка - Confirm-->				
+
+		<div class="modal_item" style="justify-content: center;">
+			<input class="modal_button_red" name="yt0" type="button" value="Подтвердить">
+		</div>
+<!--/Элемент списка-->
 
 			
 			</div>

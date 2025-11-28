@@ -98,7 +98,7 @@ html, body {
 	text-align: center;
 	margin: 0 20px;
 	color: white;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	font-weight: normal;
 }
 
@@ -286,7 +286,7 @@ html, body {
 	color: white;
 }
 
-.modal_item_name > span {
+.modal_item span {
 	display: contents;
 	font-weight: 500;
 }
@@ -325,13 +325,81 @@ html, body {
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: flex-start;
-	order: 0;
 	width: 100%;
 	padding: 8px 30px;
 }
 
 a .modal_item:hover {
 	background: #365382;
+}
+
+#modal_phone_number {
+	width: 52%;
+	height: 32px;
+	padding: 0 5px;
+	font-size: 1rem;
+	color: #365382;
+	border: 0px;
+	border-radius: 6px;	
+	background-color: #fff;
+	font-family: Rubik, sans-serif;
+}
+
+.modal_button {
+	background: #2958a5;
+    /* box-shadow: 0px 0px 2px 1px #3C4F6E; */
+    border-radius: 6px;
+    padding: 10px 40px;
+    font-family: Rubik, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    transition: all ease-in-out 0.2s;
+    border: 0;
+}
+.modal_button_red {
+	background: #f00;
+    /* box-shadow: 0px 0px 2px 1px #3C4F6E; */
+    border-radius: 6px;
+    padding: 10px 40px;
+    font-family: Rubik, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    transition: all ease-in-out 0.2s;
+    border: 0;
+}
+
+.modal_button:hover, .modal_button_red:hover {
+	background-color: #3972D1 !important;
+    box-shadow: 0px 0px 3px 1px #fff;
+    cursor: pointer;
+}
+
+.modal_checkbox {
+	display: flex;
+	transform: scale(1.5);
+	margin: 0 24px 0 0;
+	border: none;
+    border-radius: 6px;
+    background-color: #fff;
+    font-family: Rubik, sans-serif;
+	box-sizing: border-box;
+    padding: 0;
+}
+
+#modal_agree {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	justify-content: space-between;
+	width: 90%;
+	margin: 10px 0;
+	font-size: 0.8rem;
 }
 
 #modal_close_container {
@@ -405,6 +473,9 @@ a .modal_item:hover {
 
 @media screen and (max-width:425px) {
 .modal_shedule_time_available {
+	font-size: 1rem;
+}
+#modal_header {
 	font-size: 1rem;
 }
 }

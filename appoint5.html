@@ -17,8 +17,8 @@
 </head>
 
 <body>
-	<h1>Модальное окно 4</h1>
-	<h2>Подтверждение записи</h2>
+	<h1>Модальное окно 5</h1>
+	<h2>Завершение записи</h2>
 <!--Контейнер с затемнением-->
 <div class="modal-container">
 <!--Модальное окно-->		
@@ -31,8 +31,8 @@
 		<div id="modal_content">
 <!--Заголовок модального окна-->
 			<div id="modal_name">
-				<a href="appoint2a3.html"><div id="modal_icon_back"></div></a>
-				<div id="modal_header">Подтвердите запись</div>
+				<a href="appoint4.html"><div id="modal_icon_back"></div></a>
+				<div id="modal_header">Завершить запись</div>
 			</div>
 		
 <!--Flex-wrapper для списка со скролом-->
@@ -43,39 +43,39 @@
 <!--Элемент списка - request-->				
 				<div class="modal_item" style="justify-content: center; text-align: center;">Для завершения записи введите свои данные</div>
 <!--/Элемент списка-->
-<!--Элемент списка - phone number-->				
+<!--Элемент списка - Last name-->				
 				<div class="modal_item" style="justify-content: center;">
-					<input id="modal_phone_number" required="required" placeholder="(xxx) xxx-xx-xx" name="CallbackForm[callback_form_phone]" type="text" maxlength="15">
+					<input class="modal_data_field" placeholder="Фамилия*" name="AppointmentForm[appointment_form_fname]" id="AppointmentForm_appointment_form_fname" type="text">
 				</div>
 <!--/Элемент списка-->
-<!--Элемент списка - button-->
+<!--Элемент списка - Middle name-->
 				<div class="modal_item" style="justify-content: center;">
-					<input class="modal_button" name="yt0" type="button" value="Получить код">
+					<input class="modal_data_field" placeholder="Имя*" name="AppointmentForm[appointment_form_fname]" id="AppointmentForm_appointment_form_fname" type="text">
+				</div>
+<!--/Элемент списка-->
+<!--Элемент списка - First name-->				
+				<div class="modal_item" style="justify-content: center;">
+					<input class="modal_data_field" placeholder="Отчество*" name="AppointmentForm[appointment_form_fname]" id="AppointmentForm_appointment_form_fname" type="text">
 				</div>
 <!--/Элемент списка-->
 <!--Элемент списка - request-->				
-				<div class="modal_item" style="justify-content: center; text-align: center;">
-					Введите код из SMS
-				</div>
-<!--/Элемент списка-->
-<!--Элемент списка - code-->
-				<div class="modal_item" style="justify-content: center;">
-					<input id="modal_phone_req2" style="width: 30%; padding: 0 5px; font-size: 1rem; color: #365382; border: 0px; border-radius: 6px; height: 32px; background-color: #fff; font-family: Rubik, sans-serif;" class="phone_number req" required="required" placeholder="XXXX" name="CallbackForm[callback_form_phone]" type="text" maxlength="15">
-				</div>
+				<div class="modal_item" style="justify-content: center; text-align: center;">Номер вашего телефона:</div>
 <!--/Элемент списка-->
 <!--Элемент списка-->
 				<div class="modal_item" style="justify-content: center;">
-					<input class="modal_button" name="yt0" type="button" value="Подтвердить код">
+					<div id="modal_header">+7 (123) 456-7890</div>
 				</div>
+<!--/Элемент списка-->
+<!--Элемент списка - request-->				
+				<div class="modal_item" style="justify-content: center; text-align: center;">Ваша запись:</div>
 <!--/Элемент списка-->
 <!--Элемент списка - Appointment info-->				
 				<a class="modal_items_link" href="appoint2a3.html">
-					<div class="modal_item">
-						<div class="modal_item_avatar_name">
+					<div class="modal_item" style="background: #365382; padding: 10px;">
+						<div class="modal_item_avatar_name" style="margin: auto;">
 							<div class="modal_item_avatar" style="background-image: url(images/doctors_new/134_small.png);">
 							</div>
 							<div class="modal_item_name">
-								<span style="font-size: 1.1rem;">Ваша запись:</span><br /><br />
 								<span>Балашова Юлия Вячеславовна</span><br />Врач-оториноларинголог<br />
 								<span>Адрес:</span><br />Москва, ул. Полтавская, д.2<br />
 								<span>Время и дата записи:</span><br />26 ноября, среда, 10.00<br />
@@ -98,7 +98,7 @@
 <!--Элемент списка - Confirm-->				
 
 		<div class="modal_item" style="justify-content: center;">
-			<input class="modal_button_red" name="yt0" type="button" value="Подтвердить">
+			<input class="modal_button_red" name="yt0" type="button" value="Завершить запись">
 		</div>
 <!--/Элемент списка-->
 

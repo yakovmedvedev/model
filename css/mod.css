@@ -230,6 +230,7 @@ html, body {
 	justify-content: flex-start;
 	align-items: flex-start;
 	order: 0;
+	min-height: 60px;
 	margin-right: auto;
 }
 
@@ -334,7 +335,7 @@ a .modal_item:hover {
 	background: #365382;
 }
 
-#modal_phone_number {
+.modal_data_field {
 	width: 52%;
 	height: 32px;
 	padding: 0 5px;

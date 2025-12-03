@@ -91,12 +91,13 @@ html, body {
 	background-repeat: no-repeat;
 	width: 18px;
 	height: 18px;
+	margin-right: 10px;
 }
 
-#modal_header {
+.modal_header {
 	display: flex;
 	text-align: center;
-	margin: 0 20px;
+	margin: 0 auto;
 	color: white;
 	font-size: 1.2rem;
 	font-weight: normal;
@@ -290,6 +291,7 @@ html, body {
 
 .modal_item span {
 	display: contents;
+	font-size: 1rem;
 	font-weight: 500;
 }
 
@@ -394,6 +396,14 @@ a .modal_item:hover {
     padding: 0;
 }
 
+#modal_appoint_summary {
+	justify-content: center;
+	width: 100%;
+	background: #365382;
+	padding: 20px 0;	
+	margin: 20px 0;
+}
+
 #modal_agree {
 	display: flex;
 	flex-direction: row;
@@ -475,9 +485,10 @@ a .modal_item:hover {
 
 @media screen and (max-width:425px) {
 .modal_shedule_time_available {
-	font-size: 1rem;
+	font-size: 0.7rem;
 }
-#modal_header {
+	
+.modal_header {
 	font-size: 1rem;
 }
 }
@@ -486,10 +497,21 @@ a .modal_item:hover {
 .modal_item {
 	overflow-wrap:  anywhere;
 }
+	
+#modal_shedule_month {
+	margin: 6px 10px;
+	font-size: 1.1rem;
+}
+
+.modal_shedule_day_number {
+	font-size: 1rem;
+	font-weight: 500;
+}
+	
 .modal_shedule_time_available {
 	padding: 4px 2px;
 	border-radius: 4px;
-	font-size: 0.8rem;
+	font-size: 0.6rem;
 	font-weight: normal;
 }
 }

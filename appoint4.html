@@ -32,7 +32,7 @@
 <!--Заголовок модального окна-->
 			<div id="modal_name">
 				<a href="appoint2a3.html"><div id="modal_icon_back"></div></a>
-				<div id="modal_header">Подтвердите запись</div>
+				<div class="modal_header">Подтвердите запись</div>
 			</div>
 		
 <!--Flex-wrapper для списка со скролом-->
@@ -70,14 +70,18 @@
 					<input class="modal_button" name="yt0" type="button" value="Подтвердить код">
 				</div>
 <!--/Элемент списка-->
+<!--Элемент списка - Summary-->
+				<div id="modal_appoint_summary">
+<!--Элемент списка - request-->				
+				<div class="modal_item"><div class="modal_header">Ваша запись:</div></div>
+<!--/Элемент списка-->
 <!--Элемент списка - Appointment info-->				
 				<a class="modal_items_link" href="appoint2a3.html">
 					<div class="modal_item">
-						<div class="modal_item_avatar_name">
+						<div class="modal_item_avatar_name" style="margin: auto;">
 							<div class="modal_item_avatar" style="background-image: url(images/doctors_new/134_small.png);">
 							</div>
 							<div class="modal_item_name">
-								<span style="font-size: 1.1rem;">Ваша запись:</span><br /><br />
 								<span>Балашова Юлия Вячеславовна</span><br />Врач-оториноларинголог<br />
 								<span>Адрес:</span><br />Москва, ул. Полтавская, д.2<br />
 								<span>Время и дата записи:</span><br />26 ноября, среда, 10.00<br />
@@ -85,18 +89,9 @@
 						</div>
 					</div>
 				</a>
-<!--/Элемент списка-->
-<!--Элемент списка-->
-				<div class="modal_item" style="justify-content: center;">
-					<div id="modal_agree">
-					<!--<label style="display: flex; justify-content: space-between; align-items: baseline;">-->
-            		<input id="ytCallbackForm_agree_to_personal_data" type="hidden" value="0" name="CallbackForm[agree_to_personal_data]">
-						<div class="modal_checkbox"><input name="CallbackForm[agree_to_personal_data]" value="1" type="checkbox"></div>
-						<div style="display: flex;"><label for "checkbox">Я даю <a style="margin: 0 3px; color: #fff;" data-fancybox="" data-type="iframe" href="javascript:;" data-src="/documents/consent_pers_data.pdf" target="_blank">согласие</a> на обработку моих персональных данных в соответствии c <a style="margin: 0 3px; color: #fff;" data-fancybox="" data-type="iframe" href="javascript:;" data-src="/documents/conf_policy_24209.pdf" target="_blank">Политикой конфиденциальности</a>
-						</label></div>
-						</div>
+<!--/Элемент списка - Appointment info-->
+<!--/Элемент списка - Summary-->
 				</div>
-<!--/Элемент списка-->
 <!--Элемент списка - Confirm-->				
 
 		<div class="modal_item" style="justify-content: center;">

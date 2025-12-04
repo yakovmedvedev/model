@@ -103,6 +103,12 @@ html, body {
 	font-weight: normal;
 }
 
+.modal_header_emph {
+	background-color: #293E61;
+	padding: 0 8px;
+	border-radius: 6px
+}
+
 #modal_shedule_spec {
 	display: flex;
 	order: 1;
@@ -237,6 +243,7 @@ html, body {
 
 .modal_item_dir_avatar_name {
 	align-items: center;
+	min-width: 200px;
 }
 
 .modal_item_avatar {
@@ -281,6 +288,10 @@ html, body {
 	order: 0;
 }
 
+.modal_item_marg_auto {
+	margin: auto;
+}
+
 .modal_item_name {
 	display: flex;
 	flex: 1;
@@ -291,7 +302,7 @@ html, body {
 
 .modal_item span {
 	display: contents;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	font-weight: 500;
 }
 
@@ -486,6 +497,7 @@ a .modal_item:hover {
 @media screen and (max-width:425px) {
 .modal_shedule_time_available {
 	font-size: 0.7rem;
+	border-radius: 4px;
 }
 	
 .modal_header {
@@ -509,13 +521,18 @@ a .modal_item:hover {
 }
 	
 .modal_shedule_time_available {
-	padding: 2px;
+	padding: 4px;
 	border-radius: 4px;
-	font-size: 0.6rem;
+	font-size: 0.7rem;
 	font-weight: normal;
 }
 }
 
 @media screen and (max-width:320px) {
+
+.modal_shedule_time_available {
+	padding: 2px;
+    font-size: 0.6rem;
+}
 
 }

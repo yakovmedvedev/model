@@ -94,6 +94,16 @@ html, body {
 	margin-right: 10px;
 }
 
+#modal_search {
+	display: flex;
+	width: 90%;
+	margin-bottom: 30px;
+}
+
+#modal_search_modile {
+	display: none;
+}
+
 .modal_header {
 	display: flex;
 	text-align: center;
@@ -426,10 +436,10 @@ a .modal_item:hover {
 }
 
 #modal_close_container {
-	visibility: hidden;
+	display: none;
 }
 #modal_closemark {
-	visibility: hidden;
+	display: none;
 }
 
 @media screen and (max-width:768px){
@@ -451,6 +461,37 @@ a .modal_item:hover {
 	height: 100%;
 	margin: 0;
 }
+
+#modal_search {
+	display: none;
+}
+.modal_search_input_mobile_wrapper {
+    order: 1;
+    align-self: center;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+#modal_search_modile {
+	visibility: visible;
+	display: flex;
+	width: 90%;
+	margin-bottom: 30px;
+}
+.modal_search_input {
+	height: 40px;
+	border: none;
+	border-radius: 8px;
+	background: #fff no-repeat;
+	background-image: url(../images/icons/icon_search_scroll.svg);
+	background-size: 24px;
+	background-position: 2% 50%;
+	padding: 0 0 0 40px;
+	margin: 0 auto;
+}
+	
 #modal_items_wrapper {
 	display: flex;
 	flex-direction: column;
@@ -468,9 +509,9 @@ a .modal_item:hover {
 	margin-top: -20px;
 }
 #modal_close_container {
+	visibility: visible;
 	display: flex;
 	order: 0;
-	visibility: visible;
 	width: 100%;
 	flex-direction: row;
 	align-items: flex-end;

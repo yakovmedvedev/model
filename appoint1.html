@@ -34,9 +34,13 @@
 				<div class="modal_header">Выберите направление или специалиста</div>
 			</div>
 <!--Поиск-->
-			<div id="search" style="display: flex; width: 90%; margin-bottom: 30px;">
-				<form id="search-form" action="/search/result" method="GET"><div style="width: 100%;" class="search_input_wrapper"><div class="search_input"><input autocomplete="on" class="form_input" name="SearchForm[txt]" id="SearchForm_txt" type="text" placeholder="Искать направление или специалиста"></div><div class="contact_button" style="order: 2; margin: 0 auto 0px auto;"><input class="contact_form_button" type="submit" name="yt0" value=" Поиск "></div></div><input style="order:3" name="SearchForm[sort]" id="SearchForm_sort" type="hidden" value="1"></form>
+			<div id="modal_search">
+				<form id="search-form" action="/search/result" method="GET"><div class="search_input_wrapper"><div class="search_input"><input autocomplete="on" class="form_input" name="SearchForm[txt]" id="SearchForm_txt" type="text" placeholder="Искать направление или специалиста"></div><div class="contact_button" style="order: 2; margin: 0 auto 0px auto;"><input class="contact_form_button" type="submit" name="yt0" value=" Поиск "></div></div><input style="order:3" name="SearchForm[sort]" id="SearchForm_sort" type="hidden" value="1"></form>
 			</div>
+			<div id="modal_search_modile">
+				<form id="search-form" action="/search/result" method="GET"><div class="modal_search_input_mobile_wrapper"><input autocomplete="on" class="modal_search_input" name="SearchForm[txt]" id="SearchForm_txt" type="text" placeholder="Искать направление или специалиста" ></div><input style="order:3" name="SearchForm[sort]" id="SearchForm_sort" type="hidden" value="1"></form>
+			</div>
+<!--/Поиск-->
 <!--Контейнер для списка со скролом-->			
 			<div id="modal_items">
 

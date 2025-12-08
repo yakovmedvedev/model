@@ -108,6 +108,7 @@ html, body {
 	display: flex;
 	text-align: center;
 	margin: 0 auto;
+	padding: 0 6px;
 	color: white;
 	font-size: 1.4rem;
 	font-weight: normal;

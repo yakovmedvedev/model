@@ -271,17 +271,17 @@ html, body {
 }
 
 .modal_item_avatar_default {
-	background-image: url(../images/icons/spec.svg);
+	background-image: url(../images/icons/icon_spec.svg);
 	background-color: #3972D1;
 	background-repeat: no-repeat;
-	background-size: 80% 80%;
+	background-size: 100% 100%;
 	min-width: 60px; height: 60px;
 	border: solid 3px #fff;
 	border-radius: 40px;
 	margin-right: 20px;
 	overflow: hidden;
 	order: 0;
-	background-position: 50% 110%;
+	background-position: 0px 6px;
 }
 
 .modal_item_avatar_dir {

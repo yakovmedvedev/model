@@ -360,9 +360,9 @@ a .modal_item:hover {
 }
 
 .modal_data_field {
-	width: 52%;
 	height: 32px;
 	padding: 0 5px;
+	margin: 6px 0;
 	font-size: 1rem;
 	color: #365382;
 	border: 0px;
